@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <network-security-config>
-    <base-config cleartextTrafficPermitted="false">
+    <base-config cleartextTrafficPermitted="false"><!--disables clear text, id not set it uses system defaults-->
 
     </base-config>
 
     <domain-config>
-        <domain includeSubdomains="true">example.com</domain>
+        <!--This is how to whitelists endpoints-->
+        <domain includeSubdomains="true">example.com</domain><!--Allows traffic to  example.com and its subdomain-->
         <pin-set expiration="2020-01-01">
             <pin digest="SHA-256">7HIpactkIAq2Y49orFOOQKurWxmmSFZhBCoQYcRhJ3Y=</pin>
             <!-- backup pin -->
