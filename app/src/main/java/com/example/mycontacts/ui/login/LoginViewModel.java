@@ -45,14 +45,10 @@ public class LoginViewModel extends ViewModel {
             @Override
             public void run() {
                 try {
-
-
-
+                    //migrated to Https
                     String endPoint = "https://example.com/login?username="+username+"&password="+password;
                     URL url = new URL(endPoint);
                     HttpsURLConnection connection = (HttpsURLConnection) url.openConnection();
-
-
 
                     performLogin(connection);
                 } catch (Exception e) {
