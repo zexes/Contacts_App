@@ -5,6 +5,7 @@
 
     <uses-permission android:name="android.permission.INTERNET" />
 
+    <!--Setting custom permission-->
     <permission android:name="com.example.mycontacts.LIST_PROVIDER_PERMISSION" android:label="list_permission" android:protectionLevel="dangerous">
     </permission>
 
@@ -18,6 +19,7 @@
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
 
+        <!--Preventing other apps from launching it :: set it to false-->
         <activity android:exported="false" android:name=".ui.login.ContactListActivity">
         </activity>
 
